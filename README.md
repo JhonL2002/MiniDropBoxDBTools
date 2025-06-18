@@ -1,26 +1,38 @@
 # 🛠️ MiniDropBoxDBTools
-MiniDropBoxDBTools it´s a lot scripts suit designed to perform database adminsitration tasks into MiniDropBox project, including SQL Server Backups using PowerShell. This project automatize different task using different tools, in this case, PowerShell Scripts.
 
-## 🧩Repository Content
-- `scripts/` - PowerShell scripts for:
-  - Restore databases (`.bak`)
-  - Inspect backups
-  - Automatize maintenance tasks
+**MiniDropBoxDBTools** es un conjunto de scripts y algunos laboratorios de ayuda para facilitar la administración de entornos SQL Server, utilizando **PowerShell** como herramienta principal. Estos recursos permiten automatizar tareas comunes que realiza un DBA, promoviendo una comprensión práctica y moderna de la gestión de bases de datos
 
-- `sql/` - SQL scripts for:
-  - Enable TDE or Always Encrypted
-  - Create Indexes
-  - Optimization and monitoring
-- `docs/` - Guides with some tips
-- `examples/` - Configuration examples
+**MiniDropBoxDb** es una base de datos relacional creada con SQL Server que simula un entorno de gestión documental para una organización ficticia. Incluye características como:
+- **"Usuarios contenidos en la base de datos de usuario"**
+- **"Asignación de roles personalizados (a nivel de aplicación)"**
+- **"Almacenamiento y control de rutas de archivos"**
+Esta base sirve como entorno base para ejecutar tareas administrativas, respaldos, restauraciones y automatización mediante PowerShell
 
-## 🧪 Requisites
+## 🧩 Contenido del Repositorio
+
+- `scripts/` - Scripts de PowerShell para:
+  - Restaurar bases de datos (`.bak`)
+  - Inspeccionar backups
+  - Automatizar tareas de mantenimiento
+
+- `sql/` - T-SQL para:
+  - Habilitar TDE o Always Encrypted
+  - Creación y optimización de índices
+  - Optimización y monitoreo
+- `docs/` - Guias con algunos tips
+- `examples/` - Ejemplos de configuración
+
+## 🧪 Requisitos
+
 - PowerShell 7+
-- Module `SqlServer` installed (`Install-Module SqlServer`)
-- SQL Server Developer Edition (`Recommended to use SQL Server Agent`)
+- Modulo `SqlServer` instalado (`Install-Module SqlServer`)
+- SQL Server Developer Edition (`Recomendado para usar SQL Server Agent`)
 - Azure CLI
 
-## 🚀 Objective
-This repo helps to demostrate and make different resources about database administration on-premises and cloud implementations, applying best practices acquired on the **DP-300: Microsoft Certified: Azure Database Administrator Associated** and projects like **MiniDropBox**
+## 🚀 Objetivo
 
-*Created by JhonL2002 - Microsoft Certified: Azure Database Administrator Associate 🎓 (DP-300)*
+Este repositorio tiene como propósito proporcionar recursos prácticos para la administración de bases de datos con SQL Server. Aquí encontrarás scripts, laboratorios y ejemplos que simulan escenarios relaes de un DBA. La idea principal es que puedas explorar, experimentar y aprender a través de la práctica, fortaleciendo así los conocimientos necesarios para enfrentar desafíos reales en el mundo de la administración de bases de datos.
+
+¡Siéntete libre de revisar, modificar y ejecutar cada recurso por tu cuenta!
+
+*Creado por JhonL2002 - Microsoft Certified: Azure Database Administrator Associate 🎓 (DP-300)*
