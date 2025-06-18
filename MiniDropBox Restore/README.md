@@ -9,7 +9,23 @@
 ## 📌 ¿Qué es esto?
 
 Este repositorio contiene scripts en **PowerShell** que automatizan la generación y ejecución de comandos `RESTORE DATABASE` en **SQL Server**, a partir de archivos `.bak`.
-Fueron creados como parte de una serie de **mini-labs autodidactas**, que replican escenarios de administración de bases de datos **al estilo Azure**, incluyendo tareas de respaldo, restauración y manejo de archivos de base de datos
+Fueron creados como parte de una serie de **mini-labs autodidactas**, que replican escenarios de administración de bases de datos **al estilo Azure**, incluyendo tareas de respaldo, restauración y manejo de archivos de base de datos.
+
+---
+
+## 🔍 Caso de estudio
+
+Imagina que necesitas restaurar una copia de seguridad de la base de datos **MiniDropBoxDb** en una instancia de **SQL Server** alojada en una máquina virtual de **Azure**. La instancia está activa y accesible, y se cuenta con el archivo `.bak` correspondiente. El proceso debe cumplir los siguientes pasos:
+
+- Verificar el encabezado de la copia (`RESTORE HEADERONLY`) para validar tipo, fecha y modelo de recuperación.
+- Comprobar si la base de datos ya existe en la instancia, en caso afirmativo, **reemplazarla solo si el usuario lo confirma**.
+- Obtener los archivos lógicos `.mdf` y `.ldf` mediante `RESTORE FILELISTONLY` y reubicarlos en un nuevo destino de almacenamiento.
+- Generar dinámicamente el script `RESTORE DATABASE`, con instrucciones `MOVE`, `RECOVERY`, y `REPLACE` si aplica
+- Opcinalmente, guardar el script como un archivo `.sql` listo para ejecutar en **SQL Server Management Studio (SSMS)**.
+
+🛠️ Estas tareas están completamente automatizadas en el script principal del repositorio.
+
+> 💡 **Dale un vistazo, ejecútalo tú mismo y pon a prueba este mini-lab de administración de bases de datos!**
 
 ---
 
