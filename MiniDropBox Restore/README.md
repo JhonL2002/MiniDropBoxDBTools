@@ -1,4 +1,4 @@
-# 🛠️ MiniDropBox - SQL Server Restore Automation Scripts
+# 🛠️ MiniDropBox - Script automatizado para restaurar una base de datos en SQL Server
 
 **Autor:** [JhonL2002]
 **Certificación:** Microsoft DP-300 (Azure Database Administrator Associate)
