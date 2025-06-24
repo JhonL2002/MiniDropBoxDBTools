@@ -39,7 +39,7 @@ Antes de ejecutar el script, se recomienda tener en cuenta lo siguiente:
   - `Connect-AzAccount`, se abrirá una ventana y se pedirá acceder a Azure.
 4. Ejecutar el script en la terminal con:
   ```PowerShell
-  .\CreateKeyVaultScript.ps1
+  .\DeploySQLDatabaseS0.ps1
   ```
 ⚠️ El script asume que el Key Vault ya existe y que contiene el secreto `SQLAdminPassword`.
 
