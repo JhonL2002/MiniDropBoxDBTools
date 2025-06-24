@@ -17,3 +17,23 @@ Este repositorio contiene un caso práctico dividido en 3 partes donde se implem
 | 1 | Crear un servicio de Azure Key Vault seguro y una clave RSA en HSM para TDE | Azure Key Vault, RSA-HSM |
 | 2 | Crear servicio de Azure SQL Server y base de datos Single S0, almacenando la clave del servidor SQL como secreto en Key Vault | Azure SQL, Managed Identity |
 | 3 | Habilitar TDE en la base con BYOK y rotación automática | TDE, BYOK, Key Vult |
+
+## 📂 Estructura del repositorio
+
+```plaintext
+MiniDropBox Security/
+|
+|--- Create Azure Key Vault Service/
+|    |--- CreateKeyVaultScript.ps1
+|    |--- README.md
+|
+|--- Implementar Azure SQL Database
+|    |--- DeploySQLDatabaseS0.ps1
+|    |--- README.md
+|
+|--- Habilitar TDE
+|    |--- EnableTDEAzureSQLScript.ps1
+|    |--- README.md
+|
+|--- README.md (este archivo)     
+```
