@@ -2,6 +2,19 @@
 
 La protección de datos es una tarea clave en el diseño y desarrollo de bases de datos, es buena práctica **cifrar los datos en reposo** para que los datos siempre estén protegidos.
 
+---
+
+## Caso de estudio
+
+La organización que desarrolla **MiniDropBox**, ha decidido **migrar su sistema de base de datos a la nube** utilizando **Azure SQL Database**. Debido a requerimientos de cumplimiento normativo y lineamientos internos de seguridad, la empresa establece los siguientes criterios obligatorios para su infraestructura:
+
+1. **Todos los datos en reposo deben estar cifrados**, usando una clave gestionada por la empresa (BYOK).
+2. Las claves y secretos deben almacenarse únicamente en **Azure Key Vault**, con control total sobre el acceso.
+3. El proceso de despliegue debe minimizar el esfuerzo administrativo, automatizado **mediante scripts de PowerShell**, para garantizar repetibilidad y trazabilidad técnica.
+4. La solución debe permitir la **rotación automática de claves** para reducir el riesgo de exposición prolongada.
+
+---
+
 Este repositorio contiene un caso práctico dividido en 3 partes donde se implementa una solución de **Transparent Data Encryption en Azure SQL** utilizando:
 
 - **Azure Key Vault (Premium)**
