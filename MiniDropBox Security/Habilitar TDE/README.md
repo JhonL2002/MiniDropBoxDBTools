@@ -1,4 +1,4 @@
-## 🔒 MiniDropBox Security - Habilitar Transparent Data Encryption (TDE) con BYOK
+## 🔒 MiniDropBox Security - Habilitar Transparent Data Encryption (TDE) con BYOK - Parte 3
 
 Este script habilita **Transparent Data Encryption (TDE)** en la base de datos creada, utilizando una clave propia (BYOK) almacenada en Azure Key Vault.
 
