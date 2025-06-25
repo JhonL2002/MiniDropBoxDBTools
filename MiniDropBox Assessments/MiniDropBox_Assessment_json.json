@@ -1,0 +1,51 @@
+{
+  "Name": "MiniDropBoxAssessment",
+  "Databases": [
+    {
+      "Status": "Completed",
+      "AssessmentRecommendations": [],
+      "Name": "MiniDropBoxDb",
+      "SizeMB": 16.0,
+      "ServerVersion": "16.0.1135.2",
+      "ServerEdition": "Developer Edition (64-bit)",
+      "CompatibilityLevel": "CompatLevel160",
+      "ServerName": "Jhon\\JHONL2002"
+    }
+  ],
+  "ServerInstances": [
+    {
+      "ServerName": "JHON\\JHONL2002",
+      "Version": "16.0.1135.2",
+      "Status": "Completed",
+      "AssessmentRecommendations": [
+        {
+          "Category": "FeatureParity",
+          "Severity": "Information",
+          "FeatureParityCategory": "UnsupportedFeature",
+          "RuleId": "AgentJobs",
+          "Title": "SQL Server Agent jobs are not available in Azure SQL Database",
+          "Impact": "SQL Server Agent is a Microsoft Windows service that executes scheduled administrative tasks, which are called jobs in SQL Server. SQL Server Agent jobs are not available in Azure SQL Database.",
+          "Recommendation": "Use Elastic Database Jobs (preview), which are the replacement for SQL Server Agent jobs in Azure SQL Database. Elastic Database Jobs for Azure SQL Database allow you to reliably execute T-SQL scripts that span multiple databases while automatically retrying and providing eventual completion guarantees.  Alternatively consider migrating to Azure SQL Managed Instance or SQL Server on Azure Virtual Machines.",
+          "MoreInfo": "Getting started with Elastic Database Jobs (Preview) (https://docs.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview)",
+          "ImpactedObjects": [
+            {
+              "Name": "test",
+              "ObjectType": "Job",
+              "ImpactDetail": "",
+              "SuggestedFixes": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SourcePlatform": "SqlOnPrem",
+  "Status": "Completed",
+  "StartedOn": "2025-06-24T21:27:44.684151+00:00",
+  "EndedOn": "2025-06-24T21:27:51.7851238+00:00",
+  "EvaluateFeatureRecommendations": false,
+  "EvaluateCompatibilityIssues": true,
+  "EvaluateFeatureParity": true,
+  "TargetPlatform": "AzureSqlDatabase",
+  "DmaVersion": {}
+}

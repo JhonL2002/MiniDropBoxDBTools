@@ -1,0 +1,21 @@
+"Data Migration Assistant - Assessment Report:"
+"The analysis of your source SQL Server databases is complete. Based on your source server and which target server you plan to migrate, the below list can contain compatibility issues, breaking changes, behavior changes and deprecated features. While these issues may not prevent you from migrating to the target SQL Server platform, some of the breaking changes and deprecated features may disrupt your applications. We recommend addressing these compatibility issues before moving your database to production. 
+We also analyzed the databases and tables in your source server to provide a report on new SQL Server feature recommendations that might be applicable to your database environment. Implementing the below suggested recommendations would enhance your SQL Server experience and may also bring potential cost-savings and better performance."
+"Source: SQL Server"
+"Target: Azure SQL Database"
+"Duration: 0h 0m 7s"
+
+"Assessment Execution Summary - Databases"
+"Server Name","Server Version","Database Name","Status","Description"
+"JHON\JHONL2002",,"MiniDropBoxDb","Success","Assessment was successfully completed: 0 issues and 0 recommendations"
+
+"Assessment Execution Summary - Server Instances"
+"Server Name","Server Version","Status","Description"
+"JHON\JHONL2002",,"Success","Assessment was successfully completed: 0 issues and 1 recommendations"
+
+"Database Compatibility Issues"
+"Server Name","Server Version","Database Name","Issue","Source Compatibility Level","Impact","Target Compatibility Level","Compatibility Category","Recommendation","More Info","Impacted Object Type","Impacted Object","Impacted Object Details"
+
+"Feature Parity"
+"Server Name","Server Version","Feature Parity Category","Impacted Object","Impacted Object Details","Issue","Recommendation","Additional Reading"
+"JHON\JHONL2002",,"UnsupportedFeature","test","","SQL Server Agent is a Microsoft Windows service that executes scheduled administrative tasks, which are called jobs in SQL Server. SQL Server Agent jobs are not available in Azure SQL Database.","Use Elastic Database Jobs (preview), which are the replacement for SQL Server Agent jobs in Azure SQL Database. Elastic Database Jobs for Azure SQL Database allow you to reliably execute T-SQL scripts that span multiple databases while automatically retrying and providing eventual completion guarantees.  Alternatively consider migrating to Azure SQL Managed Instance or SQL Server on Azure Virtual Machines.","Getting started with Elastic Database Jobs (Preview) (https://docs.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview)"
