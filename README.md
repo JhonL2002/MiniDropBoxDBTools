@@ -13,17 +13,20 @@ Esta base sirve como entorno base para ejecutar tareas administrativas, respaldo
 
 ## 🧩 Contenido del Repositorio
 
-- `scripts/` - Scripts de PowerShell para:
-  - Restaurar bases de datos (`.bak`)
-  - Inspeccionar backups
-  - Automatizar tareas de mantenimiento
-
-- `sql/` - T-SQL para:
-  - Habilitar TDE o Always Encrypted
-  - Creación y optimización de índices
-  - Optimización y monitoreo
-- `docs/` - Guias con algunos tips
-- `examples/` - Ejemplos de configuración
+```plaintext
+MiniDropBoxDBTools/
+|
+|--- MiniDropBox Assessments (Para evaluar bases de datos antes de migrar)
+|--- MiniDropBox Backups (Para automatizar backup en SQL Server local con PowerShell)
+|--- MiniDropBox Database Firewall (Para gestionar el firewall y acceso a la base de datos Azure SQL)
+|--- MiniDropBox Migrations (Para realizar migraciones con DMA)
+|--- MiniDropBox Restore (Para realizar restauraciones con PowerShell)
+|--- MiniDropBox Security (Laboratorio 3 en 1)/
+|    |--- Create Azure Key Vault Service (Crear Key Vault con PowerShell)
+|    |--- Habilitar TDE (Habilitar TDE en una base de datos con PowerShell)
+|    |--- Implementar Azure SQL Database (Crear servicio SQL Database de Azure con PowerShell)
+|--- README.md (este archivo)    
+```
 
 ## 🧪 Requisitos
 
