@@ -39,6 +39,12 @@ MiniDropBoxDBTools/
 
 Este repositorio tiene como propósito proporcionar recursos prácticos para la administración de bases de datos con SQL Server. Aquí encontrarás scripts, laboratorios y ejemplos que simulan escenarios relaes de un DBA. La idea principal es que puedas explorar, experimentar y aprender a través de la práctica, fortaleciendo así los conocimientos necesarios para enfrentar desafíos reales en el mundo de la administración de bases de datos.
 
+---
+
+## 🔧 Estado del proyecto
+
+Este proyecto se encuentra aún **en curso**, se complementará con información y detalles adicionales
+
 ¡Siéntete libre de revisar, modificar y ejecutar cada recurso por tu cuenta!
 
 *Creado por JhonL2002 - Microsoft Certified: Azure Database Administrator Associate 🎓 (DP-300)*
